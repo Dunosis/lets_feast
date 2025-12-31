@@ -29,6 +29,34 @@ Then open `index.html` in your web browser, or serve it using a local web server
   npx http-server
 ```
 
+## Deployment
+
+This project is configured for automatic deployment to GitHub Pages using GitHub Actions.
+
+### Setting up GitHub Pages
+
+1. **Enable GitHub Pages in repository settings:**
+   - Go to your repository on GitHub
+   - Navigate to **Settings** → **Pages**
+   - Under **Source**, select **"GitHub Actions"** (not "Deploy from a branch")
+   - Save the settings
+
+2. **Push your code:**
+   - The workflow will automatically trigger on push to `main` or `master` branch
+   - You can also manually trigger it from the **Actions** tab → **Deploy to GitHub Pages** → **Run workflow**
+
+3. **Check deployment status:**
+   - Go to the **Actions** tab to see the workflow status
+   - Once successful, your site will be available at:
+     - `https://[your-username].github.io/lets_feast/`
+     - Or `https://[your-org].github.io/lets_feast/` if it's an organization repository
+
+4. **Troubleshooting:**
+   - Ensure GitHub Pages is set to use **"GitHub Actions"** as the source (not a branch)
+   - Check the Actions tab for any workflow errors
+   - Wait a few minutes after the workflow completes for DNS propagation
+   - Clear your browser cache if you see a 404 error
+
 ## Appendix
 
 ### Technology Stack
